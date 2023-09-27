@@ -1,10 +1,10 @@
 /*
---Sorting in Array--
-Ques: What is sorting?
-Ans: Sorting means arranging the array elements either in ascending or in descending order.
+    --Sorting in Array--
+    Ques: What is sorting?
+    Ans: Sorting means arranging the array elements either in ascending or in descending order.
 
-Ques: What is Bubble sort?
-Ans: Bubble sort is a sorting technique in which the elements are swapped from their position.
+    Ques: What is Bubble sort?
+    Ans: Bubble sort is a sorting technique in which the elements are swapped from their position.
 */
 
 //WAP to sort the array in ascending order(using bubble sorting).
