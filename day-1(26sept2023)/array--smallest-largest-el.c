@@ -16,8 +16,8 @@ int main(){
         scanf("%d", &arr[i]);
     }
 
-    int largest_num = arr[0];
-    int smallest_num = arr[0];
+    int largest_num = smallest_num = arr[0];
+
     for(int i=0; i<=arr_size-1; i++){
 
         // Find the largest number inside the array 

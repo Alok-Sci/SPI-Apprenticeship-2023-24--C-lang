@@ -19,8 +19,7 @@ int main(){
     }
 
 // calculating sum of even and sum of odd values of array
-    int sum_even = 0;
-    int sum_odd = 0;
+    int sum_even = sum_odd = 0;
 
     for(int i=0; i<arr_size; i++){
         //calculating the sum of even values inside the array
