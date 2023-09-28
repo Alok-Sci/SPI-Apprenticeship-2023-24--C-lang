@@ -17,17 +17,15 @@ void isNeon(int num){
         printf("\n%d is not a neon number");
     }
     else {
-        int num_square = num * num; //step 1: find square 
-
-        int num_sum = 0;
-        int remainder = num_square;
-        while(remainder>0){
-            int digit = remainder % 10; //step 2: breakdown numbers by dividing it by 10 in loop until it is 0
-            num_sum += digit; //step 3: add the remainders one-by-one
-            remainder /= 10; //exclude the last digit of the number
+        int square = num * num; //step 1: find square 
+        int sum = 0;
+        while(square > 0){
+            int digit = square % 10; //step 2: breakdown numbers by dividing it by 10 in loop until it is 0
+            sum += digit; //step 3: add the remainders one-by-one
+            square /= 10; //exclude the last digit of the number
         }
         //display message according to the condition
-        if(num_sum == num){
+        if(sum == num){
             printf("\n%ld is a neon number", num);
         }
         else {
