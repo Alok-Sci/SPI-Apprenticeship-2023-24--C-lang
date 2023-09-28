@@ -1,0 +1,20 @@
+classwork
+1. left+right diagonal
+2. matrix boundary elements
+3. matrix corner elements
+
+homework
+1. structural programming (theory)
+2. procedural programming (theory)
+3. WAP to find the largest and smallest number in a matrix of size 3x3.
+4. WAP to check if a matrix is identity matrix or not.
+5. WAP to add 2 matrix and output a new matrix.
+6. WAP to subtract 2 matrix and output a new matrix.
+7. WAP to multiply 2 matrix and output a new matrix.
+8. WAP to input a number and create functions and check if its:
+    i. prime number
+    ii. prefect number
+    iii. palindrome number
+    iv. automorphic number
+    v. neon number
+    vi. armstrong number
