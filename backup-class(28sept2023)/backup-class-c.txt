@@ -67,6 +67,22 @@ used to perform arithmetic operations.
     / -> operator to divide two operands
     % -> operator to find the remainder of division of two operands
 
+comparison operators 
+---------------------
+used to compare the values of two operands or expressions
+    == -> equal(returns true, if two operands are equal)
+    != -> not equal(returns true, if the two operands are not equal)
+    <= -> less than or equal(returns true, if the left operand is less than or equal to the right operand)
+    >= -> greater than or equal(returns true, if the left operand is greater than or equal to the right operand)
+    <> -> less than or greater than(returns true, if the left operand is less than or greater than right operand)
+
+logical operators
+------------------
+logical operator checks whether two conditions matches or not 
+
+&& -> and -> returns true if both the conditions are true, if any one codition returns false
+|| -> or -> retruns true if one of the two conitions is true, or both are true
+
 conditional statements / decision control
 ----------------------
 1.  if statement:
@@ -123,8 +139,3 @@ conditional statements / decision control
         }
 
 
-logical operators
-------------------
-logical operator checks whether two conditions matches or not 
-
-&& -> and -> 
