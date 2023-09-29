@@ -36,10 +36,10 @@ int main(){
     for(int i = 0; i < arr_size; i++){
         int c_sum = 0; //reset the value of row sum
         for(int j = 0; j < arr_size; j++){
-            c_sum += arr[i][j];
+            c_sum += arr[j][i];
         }
     //display sum of each column
-    printf("Sum of column %d: %d\n", i, c_sum);
+    printf("Sum of column %d: %d\n", i+1, c_sum);
     }
     return 0;
 }
