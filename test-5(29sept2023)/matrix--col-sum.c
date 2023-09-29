@@ -21,7 +21,7 @@ int main(){
         }
     }
 
-    //display matrix
+    //print matrix
     printf("The matrix is: \n");
     for(int i = 0; i < arr_size; i++){
         printf("|");
@@ -34,13 +34,12 @@ int main(){
 
     //calculate sum of each Column
     for(int i = 0; i < arr_size; i++){
-        int c_sum = 0; //reset the value of column sum
+        int c_sum = 0; //reset the value of row sum
         for(int j = 0; j < arr_size; j++){
-            c_sum += arr[j][i];
+            c_sum += arr[i][j];
         }
-        //display sum of each column
-        printf("Sum of column %d: %d\n", i+1, c_sum);
+    //display sum of each column
+    printf("Sum of column %d: %d\n", i, c_sum);
     }
-
     return 0;
 }
