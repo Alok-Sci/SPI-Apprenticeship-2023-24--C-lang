@@ -1,13 +1,13 @@
-//WAP to input a matrix, find the sum of column1, column2, and column3 of the matrix
+//WAP to input a matrix, find the sum of row1, row2, and row3 of the matrix
 
 #include <stdio.h>
 
 int main(){
 
     //input array size
-    int arr_size = 3;
-    // printf("Enter the size of the array: ");
-    // scanf("%d", &arr_size);
+    int arr_size;
+    printf("Enter the size of the array: ");
+    scanf("%d", &arr_size);
 
     //declare array
     int arr[arr_size][arr_size];
@@ -21,7 +21,7 @@ int main(){
         }
     }
 
-    //print matrix
+    //display matrix
     printf("The matrix is: \n");
     for(int i = 0; i < arr_size; i++){
         printf("|");
@@ -32,18 +32,15 @@ int main(){
         printf("\n");
     }
 
-    //calculate sum of each Column
-    int c_sum1 = 0, c_sum2 = 0, c_sum3 = 0;
+    //calculate sum of each row
     for(int i = 0; i < arr_size; i++){
-        c_sum1 += arr[i][0];
-        c_sum2 += arr[i][1];
-        c_sum3 += arr[i][2];
+        int r_sum = 0; //reset the value of row sum
+        for(int j = 0; j < arr_size; j++){
+            r_sum += arr[i][j];
+        }
+        //display sum of each row
+        printf("Sum of row %d: %d\n", i+1, r_sum);
     }
-
-    //display sum of each column
-    printf("Sum of column 1: %d\n", c_sum1);
-    printf("Sum of column 2: %d\n", c_sum2);
-    printf("Sum of column 3: %d\n", c_sum3);
 
     return 0;
 }
