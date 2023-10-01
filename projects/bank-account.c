@@ -82,11 +82,9 @@ int checkBalance(){
         
 }
 
-//Function to Deposit amount
+//Function to Deposit amount //recursive function
 int depositAmount(){
     if(account == 1){
-        int redeposit = 0;
-        do{
             printf(">>>Please enter the amount to deposit: ");
 
             int deposit;
@@ -99,9 +97,8 @@ int depositAmount(){
             }
             else{
                 printf("\nInvalid amount entered!\n");
-                redeposit = 1;
+                depositAmount(); //calling itself recursively
             }
-        }while(redeposit == 1);
     }
     else{
         printf("\n>>>You don't have an account!\n");
