@@ -25,6 +25,7 @@ Reporting an issue when finding any typo or bug will be appreciated!!
 
 int account, amount, withdraw, deposit;
 
+//Function to close the account
 int closeAccount(){
     printf("You have successfully withdrawn %d Rs.\n", withdraw);
     int rem_balance = amount - withdraw;
@@ -33,6 +34,7 @@ int closeAccount(){
     return 0;
 }
 
+//Function to create an account 
 int openAccount(){
     if(account == 0){
         int redeposit = 0;
@@ -65,6 +67,8 @@ int openAccount(){
     }
     return 0;
 }
+
+//Function to Check account balance
 int checkBalance(){
     if(account == 1){
         printf("Your account balance is %d Rs. \n", amount);
@@ -77,6 +81,8 @@ int checkBalance(){
     return 0;
         
 }
+
+//Function to Deposit amount
 int depositAmount(){
     if(account == 1){
         int redeposit = 0;
@@ -103,7 +109,10 @@ int depositAmount(){
     }
     return 0;
 }
+
+//Function to withdraw amount
 int withdrawAmount(){
+    //if already have an account
     if(account == 1){
 
         int rewithdraw = 1;
@@ -151,15 +160,15 @@ int withdrawAmount(){
     }
     return 0;
 }
-
-
     
 int main(){
 
+    //Display welcome message
     printf("\nWelcome to the Alok's ABC bank\n");
 
     int exit = 0;
     do{
+        //Account menu
         printf("\n===========================================\n");
         printf("\nPlease choose from the following options:\n");
         printf("1. Open an account\n");
@@ -169,25 +178,27 @@ int main(){
         printf("5. Exit\n");
         printf("\n===========================================\n");
 
+        //input option
         printf("\nEnter your choice here -> ");
         int choice;
         scanf("%d", &choice);
 
+        //option processing
         switch(choice){
             case 1:
-                openAccount();
+                openAccount(); //open account
                 break;
             case 2: 
-                checkBalance();
+                checkBalance(); //check balance
                 break;
             case 3:
-                depositAmount();
+                depositAmount(); //deposit amount
                 break;
             case 4: 
-                withdrawAmount();
+                withdrawAmount(); //withdraw amount
                 break;
             case 5:
-                exit = 1;
+                exit = 1; //exit the program
                 break;
             default:
                 printf("\nInvalid choice! Please Choose a valid Option!");
