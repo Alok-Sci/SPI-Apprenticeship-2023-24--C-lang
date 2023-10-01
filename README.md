@@ -26,7 +26,7 @@ Today, it took me 1 hr to write 2 simple c programs.
 
         void main(){
             int num;
-            printf("%d is a number", num);
+            printf("%d is a number");
             scanf("%d", &num);
         }
 ***INPUT :***
