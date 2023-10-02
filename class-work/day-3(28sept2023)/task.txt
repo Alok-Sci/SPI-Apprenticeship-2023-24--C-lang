@@ -18,3 +18,4 @@ homework
     iv. automorphic number
     v. neon number
     vi. armstrong number
+    (line/2)-space

@@ -1,0 +1,11 @@
+classwork
+--------
+1. selection sort ascending
+2. selection sort descending
+
+String:
+    -string is a combination of characters.
+
+homework
+----------
+1. WAP to find the transpose matrix of a matrix
