@@ -12,9 +12,8 @@
 int main(){
 
 //input units
-    int units, bill = 0;
-
     printf("Enter the number of units consumed: \n");
+    int units, bill = 0;
     scanf("%d", &units);
 
 
