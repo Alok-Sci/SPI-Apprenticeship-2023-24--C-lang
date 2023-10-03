@@ -10,9 +10,14 @@ Today, it took me 1 hr to write 2 simple c programs.
 ## Day 2 (27 sept 2023)
 
 ## Day 3 (28 sept 2023)
+## Day 4 (29 sept 2023)
+## Day 5 (30 sept 2023)
 
-### Files
+### Programs
 ***
+
+[pyramid]: /backup-class/patterns-in-c/pattern--full-pyramid.c "pattern-pyramid"  
+
 
 
 
@@ -39,8 +44,9 @@ Today, it took me 1 hr to write 2 simple c programs.
 
 ***ERROR :***
 
+>Reason is that this statement is missing a parameter to display the variable value, to replace `%d`
+   
     printf("%d is a number");
-Reason is that this statement is missing a parameter to display the variable value, to replace **%d**
 
 ***FIX:***
     
@@ -64,11 +70,11 @@ In the given code the program will take two integer input and then is expected t
 
 ***ERROR:*** 
 
-This is some kind of compiler error or C language bug in latest version of C.
+>This is some kind of compiler error or C language bug in latest version of C.
 
 ***FIX***
 
-Taking the character input before any integer input will fix this issue. Just change the position of statements used to take inputs.
+>Taking the character input before any integer input will fix this issue. Just change the position of statements used to take inputs.
 
     //operation choice
     char choice;
