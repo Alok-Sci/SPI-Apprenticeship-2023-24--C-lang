@@ -2,61 +2,71 @@
 
 In c, when a header file is included in a program and when it is executed
 
+## Header file
+
+
+
 ## main() function 
 
-`main(){}` - compiler only executes the program inside of main() function \
-`int main(){}` - (main() return integer value) \
-`void main(){}` - (main() doesn't return any value) 
+`main(){}` - compiler only executes the program inside of `main()` function \
+`int main(){}` - (`main()` return integer value) \
+`void main(){}` - (`main()` doesn't return any value) 
 
 `void` == no return type \
 `int` == integer return type
 
 
 -------------------------
+### data types:
+
+`int` -> integer data type; stores a number without decimal point (2byte/4byte)
+`float` -> stores a number with decimal point 
+`char` -> character data type; stores a single character.
+
+-------------------------
 ### Variable declaration & definition
 
     int a;
 
-int -> data type of variable \
-a -> variable name \
-; -> statement terminator 
+`int` -> data type of variable \
+`a` -> variable name \
+`;` -> statement terminator 
 
-ex: int a;
+*Example:*
+
+    int a;
     int a, int b;
     int a, b;
 
 -------------------------
-### data types:
-    int -> integer data type; stores a number without decimal point (2byte/4byte)
-    float -> stores a number with decimal point 
-    char -> character data type; stores a single character.
-
--------------------------
 ### Variable initialization 
+
     int a = 10;
 
-int -> data type \
-a -> variable name \
-= -> assignment operator (stores the value in the right to the variable in the left) \
-10 -> value to assign to a variable  \
-; -> statement terminator 
+`int` -> data type \
+`a` -> variable name \
+`=` -> assignment operator (stores the value in the right to the variable in the left) \
+`10` -> value to assign to a variable  \
+`;` -> statement terminator 
 
-### Display output in console 
 ---------------------------
+### Display output in console 
+
     printf("string %d \n", param); 
 
-printf()  -> a function predefined in "stdio" header file \
-"string" -> a string to display \
-%d -> format specifier; specifies the format in which the value of 'param' need to be printed. \
-\n -> escape sequence; \n is used to redirect the cursor to the next line. \
-param parameter that printf() function takes
+`printf()`  -> a function predefined in "stdio" header file \
+`"string"` -> a string to display \
+`%d` -> format specifier; specifies the format in which the value of 'param' need to be printed. \
+`\n` -> escape sequence; \n is used to redirect the cursor to the next line. \
+`param` -> parameter that printf() function takes
 
 >**Note:** `printf()` function can have multiple parameters
         arithmetic operations can also be performed inside `printf()` function. \
         Variables are written outside the quotes. 
 
-### Take input from user in console
 --------------------------------
+### Take input from user in console
+
     scanf("%d", &a);
 
 `scanf()`  is a function, predefined in "stdio" header file
@@ -67,19 +77,24 @@ param parameter that printf() function takes
 
 `&a`, `&` is also called `address operator`, locates the memory location of the variable 'a' and stores the input value.
 
-**Note:** `""` mustn't contain any `whitespace`.
+>**Note:** `""` mustn't contain any `whitespace`.
 
-arithmetic operators
----------------------
+---
+## Operators
+
+### Arithmetic operators
+
 used to perform arithmetic operations.
-    + -> operator to add two operands
-    - -> operator to subtract two operands
-    * -> operator to multiply two operands
-    / -> operator to divide two operands
-    % -> operator to find the remainder of division of two operands
 
-comparison operators 
----------------------
+`+` -> operator to add two operands
+`-` -> operator to subtract two operands
+`*` -> operator to multiply two operands
+`/` -> operator to divide two operands
+`%` -> operator to find the remainder of division of two operands
+
+---
+### Comparison operators 
+
 used to compare the values of two operands or expressions
 
 `==` -> equal(returns true, if two operands are equal)
@@ -92,16 +107,18 @@ used to compare the values of two operands or expressions
 
 `<>` -> less than or greater than(returns true, if the left operand is less than or greater than right operand)
 
-logical operators
-------------------
+---
+### Logical operators
+
 logical operator checks whether two conditions matches or not 
 
 `&&` -> `and` -> returns true if both the conditions are true, if any one codition returns false.
 
 `||` -> `or` -> retruns true if one of the two conitions is true, or both are true.
 
-conditional statements / decision control
-----------------------
+---
+## Conditional statements / decision control
+
 1.  if statement:
    
     *Syntax:*
@@ -167,9 +184,10 @@ conditional statements / decision control
             default:
                 //code
         }
+---
+## Loops
 
-
-
+---
 ## Function 
 - Function is a set of instruction to perform a specific task
 - Funtion is reusable
@@ -180,7 +198,7 @@ In c, to create a function, we first need to declare a function, then define it 
     - In C, A funciton can be declared and defined at the same time.
     - If a function is declared inside of main() function then is can not be called within the other functions
 
-    ***Example***
+    *Example:*
 
     There can have no variable name in parameters when `declaring a function`.
 
@@ -203,13 +221,13 @@ In c, to create a function, we first need to declare a function, then define it 
 ### Four types of function in c:
 ***
 1. Parameterized function 
-    - In these functions, parameters are passed within the paranthesis ().
+    - In these functions, parameters are passed within the paranthesis `()`.
 
             void func(param1, param2);
     ---
 
 2. Non-parameterized function
-    - In non-parameterized functions, no parameters are passed to the function within the paranthesis ().
+    - In non-parameterized functions, no parameters are passed to the function within the paranthesis `()`.
 
             void func();
     ---
